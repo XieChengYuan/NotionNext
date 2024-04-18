@@ -12,12 +12,10 @@ import { createContext, useContext, useEffect, useRef } from 'react'
 import BlogPostBar from './components/BlogPostBar'
 import CONFIG from './config'
 import { Style } from './style'
-/**
 const AlgoliaSearchModal = dynamic(
   () => import('@/components/AlgoliaSearchModal'),
   { ssr: false }
 )
-**/
 // 主题组件
 const BlogListScroll = dynamic(() => import('./components/BlogListScroll'), {
   ssr: false
@@ -38,17 +36,15 @@ const ArticleAround = dynamic(() => import('./components/ArticleAround'), {
 const ShareBar = dynamic(() => import('@/components/ShareBar'), { ssr: false })
 const TopBar = dynamic(() => import('./components/TopBar'), { ssr: false })
 const Header = dynamic(() => import('./components/Header'), { ssr: false })
-const NavBar = dynamic(() => import('./components/NavBar'), { ssr: false })
+//const NavBar = dynamic(() => import('./components/NavBar'), { ssr: false })
 const SideBar = dynamic(() => import('./components/SideBar'), { ssr: false })
 const JumpToTopButton = dynamic(() => import('./components/JumpToTopButton'), {
   ssr: false
 })
 const Footer = dynamic(() => import('./components/Footer'), { ssr: false })
-/**
 const SearchInput = dynamic(() => import('./components/SearchInput'), {
   ssr: false
 })
-**/
 const WWAds = dynamic(() => import('@/components/WWAds'), { ssr: false })
 const BlogListPage = dynamic(() => import('./components/BlogListPage'), {
   ssr: false
@@ -127,7 +123,7 @@ const LayoutBase = props => {
         </div>
 
         {/* 搜索框 */}
-        {/*<AlgoliaSearchModal cRef={searchModal} {...props} />*/}
+        <AlgoliaSearchModal cRef={searchModal} {...props} />
 
         <Footer {...props} />
       </div>
