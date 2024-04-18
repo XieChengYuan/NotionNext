@@ -12,12 +12,12 @@ import { createContext, useContext, useEffect, useRef } from 'react'
 import BlogPostBar from './components/BlogPostBar'
 import CONFIG from './config'
 import { Style } from './style'
-
+/**
 const AlgoliaSearchModal = dynamic(
   () => import('@/components/AlgoliaSearchModal'),
   { ssr: false }
 )
-
+**/
 // 主题组件
 const BlogListScroll = dynamic(() => import('./components/BlogListScroll'), {
   ssr: false
