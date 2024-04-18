@@ -34,7 +34,7 @@ const ArticleAround = dynamic(() => import('./components/ArticleAround'), {
   ssr: false
 })
 const ShareBar = dynamic(() => import('@/components/ShareBar'), { ssr: false })
-const TopBar = dynamic(() => import('./components/TopBar'), { ssr: false })
+//const TopBar = dynamic(() => import('./components/TopBar'), { ssr: false })
 const Header = dynamic(() => import('./components/Header'), { ssr: false })
 //const NavBar = dynamic(() => import('./components/NavBar'), { ssr: false })
 const SideBar = dynamic(() => import('./components/SideBar'), { ssr: false })
@@ -123,7 +123,7 @@ const LayoutBase = props => {
         </div>
 
         {/* 搜索框 */}
-        <AlgoliaSearchModal cRef={searchModal} {...props} />
+        {/*<AlgoliaSearchModal cRef={searchModal} {...props} />*/}
 
         <Footer {...props} />
       </div>
