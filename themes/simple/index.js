@@ -44,11 +44,11 @@ const JumpToTopButton = dynamic(() => import('./components/JumpToTopButton'), {
   ssr: false
 })
 const Footer = dynamic(() => import('./components/Footer'), { ssr: false })
-
+/**
 const SearchInput = dynamic(() => import('./components/SearchInput'), {
   ssr: false
 })
-
+**/
 const WWAds = dynamic(() => import('@/components/WWAds'), { ssr: false })
 const BlogListPage = dynamic(() => import('./components/BlogListPage'), {
   ssr: false
