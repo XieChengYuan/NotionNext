@@ -85,7 +85,7 @@ const LayoutBase = props => {
         <Header {...props} />
 
         {/* 导航栏 */}
-        <NavBar {...props} />
+         {/* <NavBar {...props} />*/}
 
         {/* 主体 */}
         <div
