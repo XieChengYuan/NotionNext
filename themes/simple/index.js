@@ -75,13 +75,13 @@ const LayoutBase = props => {
         className={`${siteConfig('FONT_STYLE')} min-h-screen flex flex-col dark:text-gray-300  bg-white dark:bg-black scroll-smooth`}>
         <Style />
 
-        {siteConfig('SIMPLE_TOP_BAR', null, CONFIG) && <TopBar {...props} />}
+        {/*{siteConfig('SIMPLE_TOP_BAR', null, CONFIG) && <TopBar {...props} />} */}
 
         {/* 顶部LOGO */}
         <Header {...props} />
 
         {/* 导航栏 */}
-         {/* <NavBar {...props} />*/}
+         {/* <NavBar {...props} /> */}
 
         {/* 主体 */}
         <div
